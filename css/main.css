@@ -1,0 +1,610 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+#home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee ;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 20px 0px;
+    z-index: 999;
+}
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.container h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.container h2 span {
+    color: #ce1212;
+}
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.navbar .menu a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #7f7f90;
+}
+.navbar .menu a:hover {
+    color: black;
+    border-bottom: 3px solid #ce1212;
+}
+#home .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+#home .container .homeinfo {
+    width: 50%;
+}
+#home .container .homeinfo h2 {
+    color: #37373f;
+    font-size: 80px;
+    font-family:"Amatic SC", sans-serif;
+}
+#home .container .homeinfo p {
+    color: #4f4f5a;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#home .container .homeinfo .btn1 {
+    padding: 10px 25px;
+    font-size: 15px;
+    background-color: #ce1212;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 0px 100vh 100vh;
+    cursor: pointer;
+}
+#home .container .homeinfo .btn1:hover {
+    background-color: red;
+}
+#home .container .homeinfo .btn2 {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #eee;
+    color: black;
+    border: 2px solid transparent ;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+}
+#home .container .homeinfo .btn2 i {
+    background-color: #fff;
+    color: black;
+    margin-right: 10px;
+    padding:10px;
+    border: 5px solid #ce1212;
+    border-radius: 50%;
+}
+#home .container .homeinfo .btn2:hover {
+    color: #ce1212;
+}
+#home .container .homeinfo .btn2:hover i {
+    color: #ce1212;
+}
+#home .container .homeimg {
+    padding-top: 60px;
+    width: 40%;
+}
+#home .container .homeimg img {
+    width: 100%;
+    transform: translate(20px,20px);
+    transition: all 0.5s;
+}
+#home .container .homeimg img:hover {
+    scale: 1.1;
+}
+#chefs {
+    width: 100%;
+    padding: 50px 0px;
+    background-color:rgb(251, 251, 251);
+}
+#chefs h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Amatic SC", sans-serif;
+    color: #7f7f90;
+}
+#chefs p {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    color: #212529;
+}
+#chefs p span {
+    color: #ce1212;
+}
+#chefs .container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#chefs .chefinfo {
+    width: 32%;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    position: relative;
+}
+#chefs .chefinfo img {
+    width: 100%;
+}
+#chefs .chefinfo h3 {
+    color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#chefs .chefinfo span {
+    color: #7f7f90;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#chefs .chefinfo p {
+    color: #7f7f90;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#chefs .chefinfo:hover {
+    scale: 1.1;
+}
+#chefs .chefinfo .layer {
+    margin-top: 30px;
+    /* margin-right: 5px; */
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+#chefs .chefinfo:hover .layer {
+    right: 20px;
+}
+#chefs .chefinfo .layer li {
+    padding: 10px 20px;
+}
+#chefs .chefinfo .layer a {
+    color: #7f7f90;
+}
+#chefs .chefinfo .layer a:hover {
+    color: #212529;
+}
+
+#gallery {
+    width: 100%;
+    padding-bottom: 70px;
+    background-color:#eee;
+}
+#gallery h2 {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Amatic SC", sans-serif;
+    color: #7f7f90;
+}
+#gallery p {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    color: #212529;
+}
+#gallery p span {
+    color: #ce1212;
+}
+#gallery .container {
+    margin-top: 60px;
+    background-color:#eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gallery .galleryimages {
+    width: 32%;
+    background-color:#eee;
+}
+#gallery .images {
+    margin-bottom: 30px;
+    border: 5px solid #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+#gallery .images img {
+    width: 100%;
+}
+#gallery .images .layer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 5, 5, 0.795);;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+#gallery .images .layer .text h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gallery .images .layer .text p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gallery .images:hover .layer{
+    top: 0;
+}
+#gallery .images:hover {
+    scale: 1.1;
+}
+#contact {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color:rgb(251, 251, 251);
+}
+#contact h2 {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Amatic SC", sans-serif;
+    color: #7f7f90;
+}
+#contact p {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    color: #212529;
+}
+#contact p span {
+    color: #ce1212;
+}
+#contact .img {
+    margin: 30px 0px;
+}
+#contact .img img {
+    width: 100%;
+}
+#contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact .contactinfo {
+    width: 49%;
+    margin: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding: 20px 30px ;
+}
+#contact .contactinfo .icon {
+    margin-right: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ce1212;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+#contact .contactinfo .info h3 {
+    color: #7f7f90;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contact .contactinfo .info p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:#212529;
+}
+#contact .contactinfo .info p span {
+    color: black;
+    font-weight: bold;
+}
+#contact .container form {
+    width: 100%;
+    margin: 30px 0px;
+    padding: 20px 15px;
+    background-color: #fff;
+}
+#contact .container form .div1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact .container form .div1 #name {
+    width: 50%;
+    padding: 10px 15px;
+    border: 2px solid #eee;
+}
+#contact .container form .div1 #email {
+    width: 49%;
+    padding: 10px 15px;
+    border: 2px solid #eee;
+}
+#contact .container form .div2 {
+    width: 100%;
+}
+#contact .container form .div2 #subject {
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #eee;
+}
+#contact .container form .div3 #message {
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #eee;
+}
+#contact .container #message::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact .container .btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #ce1212;
+    border: none;
+    border-radius: 30px;
+}
+#contact .container .div4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contact .container .btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+    background-color: black;
+}
+#footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer .container .footerinfo {
+    margin: 30px 0px;
+    width: 25%;
+}
+#footer .container .logo img {
+    width: 50%;
+}
+#footer .footerinfo p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+#footer .footerinfo h3 {
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+#footer .footerinfo ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+/* #footer .footerinfo ul li {
+    margin: 10px 0px;
+    padding: 0px 30px;
+} */
+#footer .footerinfo ul li a {
+    color: #fff;
+}
+#footer .container .footerinfo2 {
+    margin: 30px 0px;
+    width: 45%;
+}
+#footer .footerinfo2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+#footer .footerinfo2 h3 {
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+#footer .footerinfo2 #emailaddress {
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+#footer .footerinfo2 .btn {
+    width: 20%;
+    margin-top: 5px;
+    padding: 10px 5px;
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #ce1212;
+}
+#footer .footerinfo2 .btn i {
+    margin-right: 5px;
+    color: #fff;
+}
+#footer .footerinfo2 .btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#footer .footerinfo2 .links {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+#footer .footerinfo2 .links .div {
+    margin-right: 25px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 45%;
+    padding: 5px 0px;
+    transition: all 0.5s;
+}
+#footer .footerinfo2 .links .div:hover {
+    background-color: #212529;
+    transform:translate(20px);
+}
+#footer .container .footerinfo3 {
+    margin: 30px 0px;
+    width: 25%;
+}
+#footer .footerinfo3 h3 {
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+#footer .footerinfo3 ul li {
+    padding: 10px 0px;
+}
+#footer .footerinfo3 ul li a {
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#footer .footerinfo3 ul li a i {
+    color: #ce1212;
+    margin-right: 15px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 700px) {
+    #home .container {
+     width: 60%;
+    }
+   #home .container .homeinfo {
+     padding-top: 80px;
+     width: 100%;
+   }
+   #home .container .homeimg {
+    width: 100%;
+   }
+   #chefs .container {
+    width: 60%;
+   }
+   #chefs .chefinfo {
+    width: 100%;
+    margin-bottom: 20px;
+   }
+   #gallery .container {
+    width: 60%;
+   }
+   #gallery .galleryimages {
+    width: 100%;
+   }
+   #contact .container {
+    width: 60%;
+   }
+   #contact .img img {
+    width: 100%;
+   }
+   #contact .contactinfo {
+    width: 100%;
+    padding: 10px 5px ;
+   }
+   #footer .container {
+    width: 60%;
+   }
+   #footer .container .footerinfo {
+    width: 100%;
+   }
+   #footer .container .logo img {
+    width: 50%;
+   }
+   #footer .container .footerinfo2 {
+    width: 100%;
+   }
+   #footer .footerinfo2 #emailaddress {
+    width: 65%;
+   }
+   #footer .footerinfo2 .btn {
+    width: 30%;
+   }
+   #footer .container .footerinfo3 {
+    width: 100%;
+   }
+}
+
+@media screen and (min-width:700px) and (max-width:1200px){
+    #home .container .homeinfo {
+        padding-top: 80px;
+        width: 50%;
+      }
+      #home .container .homeimg {
+       width: 50%;
+      }
+      #chefs .container {
+       width: 50%;
+      }
+      #chefs .chefinfo {
+       width: 100%;
+       margin-bottom: 40px;
+      }
+      #gallery .container {
+       width: 50%;
+      }
+      #gallery .galleryimages {
+       width: 100%;
+      }
+      #contact .container {
+       width: 50%;
+      }
+      #contact .img img {
+       width: 100%;
+      }
+      #contact .contactinfo {
+       width: 100%;
+       padding: 10px 5px ;
+      }
+      #footer .container {
+       width: 50%;
+      }
+      #footer .container .footerinfo {
+       width: 100%;
+      }
+      #footer .container .logo img {
+       width: 80%;
+      }
+      #footer .container .footerinfo2 {
+       width: 100%;
+      }
+      #footer .container .footerinfo3 {
+       width: 100%;
+      }
+}
